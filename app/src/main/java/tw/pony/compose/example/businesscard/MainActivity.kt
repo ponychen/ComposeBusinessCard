@@ -53,15 +53,13 @@ fun DefaultPreview() {
 
 @Composable
 fun BusinessCard() {
-    ComposeBusinessCardTheme {
-        Column(modifier = Modifier
-            .fillMaxSize()
-            .background(Color(0xFF0E3948)),
-            verticalArrangement = Arrangement.SpaceEvenly
-        ) {
-            NameAndTitle()
-            UserInfo()
-        }
+    Column(modifier = Modifier
+        .fillMaxSize()
+        .background(Color(0xFF0E3948)),
+        verticalArrangement = Arrangement.SpaceEvenly
+    ) {
+        NameAndTitle()
+        UserInfo()
     }
 }
 
